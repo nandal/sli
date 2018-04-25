@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.sli_systems.tests.web.AppTest" time="0.043" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.sli_systems.tests.web.testcases.BasicSearchTest" time="127.224" tests="2" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -60,5 +60,23 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="com.sli_systems.tests.web.AppTest" time="0.003"/>
+  <testcase name="searchKeywordTest[0]" classname="com.sli_systems.tests.web.testcases.BasicSearchTest" time="28.56"/>
+  <testcase name="searchKeywordTest[1]" classname="com.sli_systems.tests.web.testcases.BasicSearchTest" time="98.663">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at com.sli_systems.tests.web.testcases.BasicSearchTest.searchKeywordTest(BasicSearchTest.java:68)
+</failure>
+    <system-out><![CDATA[beforeTestMethod();
+Key is: wiki and output is: wikipedia
+afterTestMethod();
+]]></system-out>
+    <system-err><![CDATA[1524661535769	geckodriver	INFO	geckodriver 0.19.1
+1524661535777	geckodriver	INFO	Listening on 127.0.0.1:41702
+1524661536167	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\NANDAL~1\\AppData\\Local\\Temp\\rust_mozprofile.PfEIZsx50Hos"
+1524661538472	Marionette	INFO	Enabled via --marionette
+1524661541443	Marionette	INFO	Listening on port 59454
+1524661541937	Marionette	WARN	TLS certificate errors will be ignored for this session
+Apr 25, 2018 6:35:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
 </testsuite>
