@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.sli_systems.tests.web.GoogleSearchTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.245 s <<< FAILURE! - in com.sli_systems.tests.web.GoogleSearchTest
+com.sli_systems.tests.web.GoogleSearchTest  Time elapsed: 0.245 s  <<< ERROR!
+java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at com.sli_systems.tests.web.GoogleSearchTest.beforeClassTestMethod(GoogleSearchTest.java:58)
+
