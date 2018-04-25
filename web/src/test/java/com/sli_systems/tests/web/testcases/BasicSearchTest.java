@@ -15,6 +15,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.sli_systems.tests.web.pages.SliResultPage;
@@ -38,11 +39,13 @@ public class BasicSearchTest {
 	
 	@Parameters
 	public static Collection<Object[]> parameter() {
-		Object[][] data = new Object[2][2];
+		Object[][] data = new Object[3][2];
 		data[0][0] = "red";
 		data[0][1] = "Valentine";
-		data[1][0] = "wiki";
-		data[1][1] = "wikipedia";
+		data[1][0] = "Best";
+		data[1][1] = "P.A.R. Checklist";
+		data[2][0] = "water";
+		data[2][1] = "WaterFilters.net";
 		return Arrays.asList(data);
 	}
 
@@ -54,7 +57,8 @@ public class BasicSearchTest {
 	@Before
 	public void beforeTestMethod(){
 		System.out.println("beforeTestMethod();");
-		driver = new FirefoxDriver();
+		//driver = new FirefoxDriver();
+		driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("http://www.sli-systems.com/");
 	}

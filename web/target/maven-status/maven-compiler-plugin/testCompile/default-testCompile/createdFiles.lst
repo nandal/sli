@@ -1,1 +1,3 @@
-com\sli_systems\tests\web\AppTest.class
+com/sli_systems/tests/web/pages/SliSearchPage.class
+com/sli_systems/tests/web/pages/SliResultPage.class
+com/sli_systems/tests/web/testcases/BasicSearchTest.class
